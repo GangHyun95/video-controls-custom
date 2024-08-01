@@ -182,6 +182,14 @@ button {
     content: "\f04c";
 }
 
+.volume-btn:not(.mute)::before {
+    content: '\f028';
+}
+
+.volume-btn.mute::before {
+    content: '\f6a9';
+}
+
 .settings-btn::before {
     content: "\f013";
 }
