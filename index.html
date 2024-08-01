@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player Custom</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section class="video-player-wrapper">
+		<i class="video-player-loading is-hidden"></i>
+		<video class="video-player" poster="/image/poster.png" src=http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4 pteload="auto" playsinline tabindex="0"></video>
+		<div class="video-player-controls">
+			<div class="progress-section">
+				<div class="progress-bar-wrap">
+					<div class="progress-bar" style="width: 50%;"></div>
+				</div>
+			</div>
+			<div class="control-panel">
+				<div class="left-controls">
+					<button class="play-pause-btn control-btn"></button>
+						<div class="volume-container">
+							<button class="volume-btn control-btn"><i class="fas fa-volume-up"></i></button>
+							<input type="range" class="volume-control" min="0" max="1" step="0.01" value="0.5" style="background: linear-gradient(to right, #fff 50%, #555 50%)">
+						</div>
+					<div class="time-container">
+						<span class="current-time">00:00</span>
+						<span class="separator">|</span>
+						<span class="total-time">10:00</span>
+					</div>
+				</div>
+				<div class="right-controls">
+					<button class="settings-btn control-btn"></button>
+					<button class="pip-btn control-btn"></button>
+					<button class="fs-btn control-btn"></button>
+					<div class="settings-container is-hidden">
+						<div class="settings-panels">
+							<div class="playback-rate-panel">
+								<button class="play-circle"></button>
+								<span>재생속도&nbsp;&nbsp;&nbsp;&nbsp;</span>
+								<span class="playback-text">보통</span>
+								<button class="angle-right"></button>
+							</div>
+						</div>
+						<ul class="playback-settings is-hidden">
+							<li class="playback-rate-label">
+								<button><i class="fas fa-angle-left"></i></button>
+								<span>재생 속도</span>
+							</li>
+							<ul class="playback-rate-select">
+								<li data-playback-rate="0.25">0.25</li>
+								<li data-playback-rate="0.5">0.5</li>
+								<li data-playback-rate="0.75">0.75</li>
+								<li data-playback-rate="1.0">보통</li>
+								<li data-playback-rate="1.25">1.25</li>
+								<li data-playback-rate="1.5">1.5</li>
+								<li data-playback-rate="1.75">1.75</li>
+								<li data-playback-rate="2">2</li>
+							</ul>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</body>
+</html>
