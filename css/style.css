@@ -5,6 +5,7 @@
 }
 
 .is-hidden {
+    display: none !important;
 }
 
 button {
@@ -202,11 +203,11 @@ button {
     content: "\f065";
 }
 
-.fs-btn:not(.full-screen)::before {
+.video-player-wrapper:not(.full-screen) .fs-btn::before {
     content: "\f065";
 }
 
-.fs-btn.full-screen::before {
+.video-player-wrapper.full-screen .fs-btn::before {
     content: "\f066";
 }
 
